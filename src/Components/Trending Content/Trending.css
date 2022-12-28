@@ -1,0 +1,106 @@
+.trending-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    min-height: 18rem;
+}
+
+@media only screen and (max-width:768px) {
+    .trending-container {
+        min-height: 7rem;
+    }
+}
+
+
+.trending-container .card {
+    min-width: 15rem;
+    min-height: 8.75rem;
+    margin: 0rem .7rem;
+    position: relative;
+}
+
+
+@media screen and (min-width:768px) {
+    .trending-container .card {
+        min-width: 22.375rem;
+        max-height: 14.375rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .trending-container .card {
+        min-width: 22.375rem;
+        max-height: 14.375rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .trending-container .card {
+        min-width: 25.375rem;
+        max-height: 14.375rem;
+    }
+}
+
+.trending-container .card-cover {
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:768px) {
+    .trending-container .film-overlay {
+        bottom: 2.5rem;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .trending-container .film-overlay {
+        bottom: 1.3rem;
+    }
+}
+
+
+@media only screen and (min-width:1440px) {
+    .trending-container .film-overlay {
+        bottom: 2rem;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .trending-container .play-icon-container {
+        top: 4rem;
+    }
+}
+
+.trending-container .detail-container,
+.film-title {
+    position: relative;
+    bottom: 4rem;
+    left: 1rem;
+}
+
+@media only screen and (max-width:768px) {
+
+    .trending-container .detail-container,
+    .film-title {
+        bottom: 3rem;
+    }
+}
+
+.film-title {
+    max-width: 10rem;
+}
+
+@media only screen and (max-width:768px) {
+    .film-title {
+        font-size: 1.2rem;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}

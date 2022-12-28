@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap');
+
+:root {
+  --red: #FC4747;
+  --dark-blue: #10141E;
+  --light-blue: #5A698F;
+  --blue: #151D2F;
+  --white: #FFF;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Outfit Light", sans-serif;
+  background-color: var(--dark-blue);
+}
+
+/* Global */
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+.cta-btn {
+  min-width: 100%;
+  background-color: var(--red);
+  border: none;
+  min-height: 3rem;
+  border-radius: 5px;
+  color: var(--white);
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+@media screen and (max-width:374px) {
+  .cta-btn {
+    max-width: 17.438rem;
+  }
+}
+
+/* Typography */
+/* fw === Font weight */
+/* fs === Font size */
+
+.header {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width:768px) {
+  .header {
+    font-size: 1.75rem;
+  }
+}
+
+.light-fw {
+  font-weight: 300;
+}
+
+.medium-fw {
+  font-weight: 500;
+}
+
+.large-fs {
+  font-size: 2rem;
+}
+
+.medium-fs {
+  font-size: 1.5rem;
+}
+
+.small-fs {
+  font-size: 1.125rem;
+}
+
+.xs-fs {
+  font-size: .938rem;
+}
+
+.xxs-fs {
+  font-size: 0.813rem;
+}
+
+/* Container sizes */
+.max-width-container {
+  max-width: 22.438rem;
+  min-width: 22.438rem;
+  margin: auto;
+  color: var(--white);
+}
+
+
+@media screen and (max-width:374px) {
+  .max-width-container {
+    max-width: 19rem;
+    min-width: 19rem;
+  }
+}
+
+@media (min-width:450px) {
+  .max-width-container {
+    max-width: 27rem;
+  }
+}
+
+
+@media (min-width:600px) {
+  .max-width-container {
+    max-width: 35rem;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .max-width-container {
+    max-width: 44.938rem;
+    min-width: 44.938rem;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .max-width-container {
+    max-width: 55rem;
+    min-width: 55rem;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .max-width-container {
+    max-width: 65rem;
+    min-width: 65rem;
+  }
+}
+
+
+@media screen and (min-width:1440px) {
+  .max-width-container {
+    max-width: 72.5rem;
+    min-width: 72.5rem;
+    position: relative;
+    bottom: 60rem;
+  }
+}

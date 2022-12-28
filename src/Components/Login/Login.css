@@ -1,0 +1,78 @@
+.login-container {
+    max-width: 20.438rem;
+    min-height: 22.813rem;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 10px;
+    font-family: "Outfit";
+    padding: 2rem;
+    margin: 12rem auto;
+}
+
+
+@media screen and (max-width:374px) {
+    .login-container {
+        max-width: 17.438rem;
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    .login-container {
+        min-height: 25rem;
+        max-width: 23.313rem;
+    }
+}
+
+.logo-img {
+    position: absolute;
+    top: 7rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+.login-input {
+    border-bottom: 1px solid grey;
+    background-color: var(--blue);
+    margin: .5rem 0;
+}
+
+input[type="text"] {
+    border: none;
+    min-width: 100%;
+    min-height: 2.313rem;
+    color: var(--white);
+    text-indent: 1rem;
+    caret-color: var(--red);
+}
+
+
+@media screen and (max-width:374px) {
+    input[type="text"] {
+        max-width: 12.438rem;
+    }
+}
+
+input[type="text"]::placeholder {
+    color: var(--light-blue);
+    font-size: 0.938rem;
+    text-indent: 1rem;
+}
+
+.cta-heading {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.cta-heading span {
+    color: var(--red);
+    text-decoration: none;
+    margin-left: .2rem;
+}

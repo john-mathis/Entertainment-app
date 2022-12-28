@@ -1,0 +1,180 @@
+/* Card Container */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: auto;
+}
+
+
+@media only screen and (min-width:450px) {
+    .card-container {
+        gap: 2rem;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.7rem;
+    }
+}
+
+
+@media only screen and (min-width:768px) {
+    .card-container {
+        max-width: 44rem;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .card-container {
+        max-width: 55rem;
+    }
+}
+
+
+@media only screen and (min-width:1200px) {
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 65rem;
+    }
+}
+
+
+@media only screen and (min-width:1200px) {
+    .card-container {
+        max-width: 70rem;
+    }
+}
+
+/* Card */
+.card-container .card {
+    color: var(--white);
+    font-family: "Outfit";
+    min-width: 100%;
+}
+
+
+/* Card Image */
+.img-container {
+    position: relative;
+}
+
+.card-container .card-cover {
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 10px;
+}
+
+
+/* Hover States */
+.film-overlay {
+    position: absolute;
+    background-color: black;
+    border-radius: 10px;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 100%;
+}
+
+@media only screen and (min-width:1440px) {
+    .film-overlay {
+        min-height: 100%;
+    }
+}
+
+.film-overlay:hover {
+    opacity: 0.7;
+}
+
+
+.film-overlay:hover+.play-icon-container {
+    visibility: visible;
+}
+
+
+.play-icon-container {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: .8rem 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 7.3rem;
+    background-color: rgba(119, 144, 202, 0.5);
+    border-radius: 30px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+@media only screen and (max-width:768px) {
+    .play-icon-container {
+        max-width: 4rem;
+        padding: 1rem 1.5rem;
+    }
+}
+
+.play-icon {
+    margin-right: 1rem;
+}
+
+
+@media only screen and (max-width:768px) {
+    .play-icon {
+        margin-right: .3rem;
+    }
+}
+
+
+.bookmark-icon-container {
+    background-color: var(--light-blue);
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.bookmark-icon-container:hover {
+    background-color: var(--white);
+}
+
+.bookmark-icon {
+    padding: .5rem;
+    cursor: pointer;
+}
+
+
+.bookmark-icon:hover {
+    filter: brightness(-50%);
+}
+
+
+
+.detail-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.detail {
+    margin: 0 .1rem;
+}
+
+@media only screen and (min-width:350px) {
+    .detail {
+        margin: 0 .2rem;
+    }
+}

@@ -1,0 +1,22 @@
+.search-container {
+    position: relative;
+}
+
+.search-bar {
+    margin: 1rem 0;
+    background-color: var(--dark-blue);
+    color: var(--light-blue);
+    text-indent: 1rem;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+}
+
+
+
+.search-logo {
+    position: absolute;
+    bottom: 1.5rem;
+    left: .5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+}
