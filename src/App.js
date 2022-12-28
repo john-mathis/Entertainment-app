@@ -38,7 +38,7 @@ function App() {
       }}
     >
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/Entertainment-app" element={<Home />} />
         <Route path="/movies" element={<Movies />} />
         <Route path="/shows" element={<Shows />} />
         <Route path="/bookmarks" element={<Bookmarks />} />
