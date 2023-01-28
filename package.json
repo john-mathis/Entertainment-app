@@ -1,6 +1,5 @@
 {
   "name": "entertainment",
-  "homepage": "https://john-mathis.github.io/Entertainment-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
